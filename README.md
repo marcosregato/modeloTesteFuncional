@@ -21,7 +21,7 @@
 > Os testes podem ser executados ou no Cucumber ou no Junit. </br>
 > Na pasta config, temos 2 classes que são :
 
-> ** RunnerTestCucumber ** </br>
+> __RunnerTestCucumber__ </br>
 
 > 	Os teste serão executados na forma tradicional da execucão do Cucumber.
 > 	Colocando o caminho da pasta steps do seu projeto.
@@ -43,7 +43,7 @@
 > Na pasta script contem 2 scripts criarEstruturaDiretorioLinux.sh (Linux) e criarEstruturaDiretorioWindows.bat (Windows) </br>
 > São elas que contrui a estruturas de pastas para as evidências 
 
-> ** Descrição dos pastas ** </b>
+> __Descrição dos pastas__ </b>
 
 > O diretorio logCSV, e gerado arquivo no formato CSV com o resultados dos steps do teste.</br>
 > Exemplo :
@@ -61,7 +61,7 @@
 
 # Linha de comandos
 
-> ** Sonarqube ** </br>
+> __Sonarqube__ </br>
 
 > 	mvn sonar:sonar -Dsonar.host.url=http://localhost:9000
 > 	ou
@@ -72,4 +72,12 @@
 > Na raiz do projeto, o arquivo config.properties, tem as configurações para a execução do teste.
 
 
-# modeloTesteFuncional
+# Links dos projetos da arquitetura
+> __Modelo Teste Funcional__
+> [GitHub Pages](https://github.com/marcosregato/modeloTesteFuncional).</br>
+
+> __Painel Controle Teste__
+> [GitHub Pages](https://github.com/marcosregato/painelControleTeste).</br>
+
+> __ServiceTeste__
+[GitHub Pages](https://github.com/marcosregato/serviceTeste).</br>
