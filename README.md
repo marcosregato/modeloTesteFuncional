@@ -12,7 +12,7 @@
  Arquitetura do projeto </h3>
 
 > ** Ferramentas usadas no desenvolvimento ** </br>
-> * Java
+> * Java - versão 8
 > * Junit
 > * Selenium (Webdriver)
 > * Sonarqube
@@ -79,5 +79,5 @@
 > __Painel Controle Teste__
 > [GitHub Pages](https://github.com/marcosregato/painelControleTeste).</br>
 
-> __ServiceTeste__
-[GitHub Pages](https://github.com/marcosregato/serviceTeste).</br>
+> __Api Teste MongoDB__
+> [GitHub Pages](https://github.com/marcosregato/apiTesteMongoDB).</br>
