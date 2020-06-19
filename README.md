@@ -1,6 +1,7 @@
 # ModeloTesteFuncional
 
 > ModeloTeste, faz parte de arquitetura de sistema para testa sistemas web.</br> 
+> Ver
 
 ![Semantic description of image](./diagrama.png)</p>
 <h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -11,7 +12,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  Arquitetura do projeto </h3>
 
-> ** Ferramentas usadas no desenvolvimento ** </br>
+> ** Ferramentas de desenvolvimento ** </br>
 > * Java - versão 8
 > * Junit
 > * Selenium (Webdriver)
@@ -76,8 +77,8 @@
 > __Modelo Teste Funcional__
 > [GitHub Pages](https://github.com/marcosregato/modeloTesteFuncional).</br>
 
-> __Painel Controle Teste__
-> [GitHub Pages](https://github.com/marcosregato/painelControleTeste).</br>
+> __Painel Teste Angular__
+> [GitHub Pages](https://github.com/marcosregato/painelTesteAngular).</br>
 
 > __Api Teste MongoDB__
 > [GitHub Pages](https://github.com/marcosregato/apiTesteMongoDB).</br>
