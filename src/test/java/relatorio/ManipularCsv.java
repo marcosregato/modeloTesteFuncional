@@ -20,21 +20,22 @@ public class ManipularCsv {
 
 	static String path = System.getProperty("user.dir");
 
-	//private String pathArquivoWind = "C:\\FERRAMENTA_TESTE\\logsCSV\\";
 	private String pathArquivoWind = "C:\\Users\\"+nomeUsuario+"\\Documents\\FERRAMENTA_TESTE\\logsCSV\\";
-	private String pathArquivoLinux = "/home/"+nomeUsuario+"/FERRAMENTA_TESTE/logsCSV/";
+	//private String pathArquivoLinux = "../modeloTesteFuncional/FERRAMENTA_TESTE/logsCSV/";
+	private static final String Path_TestData = System.getProperty("user.dir");
+	String pathArquivoLinux = Path_TestData+"/FERRAMENTA_TESTE/";
+	
 
 	Process proc;
 	public void criarDiretorio() {
 		try {
-			if(sistemaOperacional.contains("Windows")) {
-				Runtime rt = Runtime.getRuntime();
-				proc = rt.exec("cmd.exe /c "+path+ConfigProperties.getProperty("estrutura.diretorio.windows"));
+			if(!new File(pathArquivoLinux).exists()) {
+				new File(pathArquivoLinux).mkdir();
+				
 			}else {
-				Runtime rt = Runtime.getRuntime();
-				proc = rt.exec(path+ConfigProperties.getProperty("estrutura.diretorio.linux"));
+				System.out.println("JA FOI CRIAADO");
 			}
-		} catch (IOException e) {
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
 	}
@@ -90,7 +91,6 @@ public class ManipularCsv {
 		}
 	}
 
-
 	/**
 	 * @param nomeClass
 	 * @param nomeMetodo
@@ -118,13 +118,11 @@ public class ManipularCsv {
 				csvWriter.close();
 			}
 			
-			
 		} catch (Exception e) {
 			System.out.println(">>>>>>>>>>>>>>>> escreverCsv <<<<<<<<<<<<<<<<<< \n");
 			e.printStackTrace();
 		}
 	}
-
 
 	@SuppressWarnings("unused")
 	public String getUltimoArquivoCsv(){//String nomeArquivo) {
@@ -170,9 +168,5 @@ public class ManipularCsv {
 			e.printStackTrace();
 		}
 		return null;
-	}
-
-	public void fecharArquivoFechar() {
-
 	}
 }

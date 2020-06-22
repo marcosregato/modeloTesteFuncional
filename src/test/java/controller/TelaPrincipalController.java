@@ -27,7 +27,6 @@ public class TelaPrincipalController {
    
     public TelaPrincipalController(WebDriver driver) {//, Document doc) {
         this.driver = driver;
-     //   this.doc = doc;
     }
     
     public void setTxtPesquisar(String txt) {

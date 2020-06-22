@@ -16,21 +16,9 @@ import cucumber.api.junit.Cucumber;
 	features = {"classpath:features"},
 	glue = {"classpath:steps"}
 	//tags = {"@tag3"}
-	
-	//monochrome = true,
-		//strict = true,
-		//plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
-		//snippets = SnippetType.UNDERSCORE,
-		//features = "src/test/java/ffeatures",
-		//glue = "teps"
-		//tags = {"@tag3"}
 		
 )
 
 public class RunnerTestCucumber {
-	/*@AfterClass
-    public static void writeExtentReport() {
-        Reporter.loadXMLConfig(new File("config/report.xml"));
-    
-    }*/
+
 }

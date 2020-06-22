@@ -1,0 +1,14 @@
+Status,Data,Hora,Nome Metodo, Mensagem Erro
+OK,21-06-2020,02:42,setTxtPesquisar
+OK,21-06-2020,02:42,clickBtnPesquisar
+OK,21-06-2020,02:43,isValidarElement,Texto encontrado => BLOUSE
+OK,21-06-2020,02:43,voltarPagIndex
+OK,21-06-2020,02:43,clickBtnPesquisar
+OK,21-06-2020,02:43,isValidarElement,Texto encontrado => Please enter a search keyword
+OK,21-06-2020,02:43,cenarioTestePesquisarComTexto,Final do Teste
+ERRO,21-06-2020,02:43,cenarioTestePesquisarComTexto,Tried to run command without establishing a connection
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'localhost.localdomain', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.6.16-200.fc31.x86_64', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 77.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200603192455, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 55377, moz:profile: /tmp/rust_mozprofilewijZOn, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.6.16-200.fc31.x86_64, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e94fb4b8-335c-473e-aad0-00383b8782c7

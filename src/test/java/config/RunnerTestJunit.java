@@ -11,7 +11,6 @@ import cenarioTeste.TC_001_PaginaPrincipal;
 	TC_001_PaginaPrincipal.class
 })
 
-
 public class RunnerTestJunit {
 	
 	/*

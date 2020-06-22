@@ -12,7 +12,6 @@ public class Browser {
 	@SuppressWarnings("unused")
 	private static WebDriver driver;
 
-
 	public static WebDriver getDriver() {
 		try {
 			if(ConfigProperties.getProperty("browser").equals("FIREFOX")) {

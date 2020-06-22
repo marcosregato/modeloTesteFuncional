@@ -21,7 +21,6 @@ public class ConfigProperties {
         return properties.getProperty(value).trim();
     }
 	
-	
 	public String pathFile(String file) {
 		String path = System.getProperty("user.dir");
 		String nomeArquivo=null;
@@ -33,7 +32,6 @@ public class ConfigProperties {
 			for(int a =0; a< f.length;a++) {
 				nomeArquivo = f[a].getName();
 			}
-			
 		}else {
 			File arquivo = new File(path+"/arquivoJSON/");
 			File[] f = arquivo.listFiles();
@@ -42,9 +40,7 @@ public class ConfigProperties {
 				nomeArquivo = f[a].getName();
 			}
 		}
-		
 		return nomeArquivo;
-		
 	}
 
 	public static void main(String[] asd) {

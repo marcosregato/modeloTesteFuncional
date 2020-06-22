@@ -1,0 +1,453 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Pesquisar e colocar em ordem",
+        "description": "",
+        "id": "title-of-your-feature;pesquisar-e-colocar-em-ordem;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9027690475,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "o usuario acessa o site http://automationpractice.com/index.php",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 24
+                }
+              ],
+              "location": "ElementPag.openBrowser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 115373196,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "o usuario digitar no campo de pesquisa",
+            "match": {
+              "location": "ElementPag.escreverTxtCampoPesquisar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1484908380,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clicar no botao de pesquisa",
+            "match": {
+              "location": "ElementPag.clickBotaoPesquisar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1471002338,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "ordem de roupa",
+            "match": {
+              "location": "ElementPag.selectOrdemProduto()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11351163802,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "fecha broser do teste",
+            "match": {
+              "location": "ElementPag.fechaBroswer()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "acesso atraves link",
+        "description": "",
+        "id": "title-of-your-feature;acesso-atraves-link;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6745622830,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "o usuario acessa o site http://automationpractice.com/index.php",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 24
+                }
+              ],
+              "location": "ElementPag.openBrowser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3044548615,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "o usuario clica aleatóriamente estilo de roupa",
+            "match": {
+              "location": "ElementPag.linkEstiloRoupa()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3329517132,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "fecha broser do teste",
+            "match": {
+              "location": "ElementPag.fechaBroswer()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "realiza compra",
+        "description": "",
+        "id": "title-of-your-feature;realiza-compra;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7281829390,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "o usuario acessa o site http://automationpractice.com/index.php",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 24
+                }
+              ],
+              "location": "ElementPag.openBrowser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2033602354,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "o usuario clica aleatóriamente estilo de roupa",
+            "match": {
+              "location": "ElementPag.linkEstiloRoupa()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62915948,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "o usuario digita a quantidade de roupa 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 39
+                }
+              ],
+              "location": "ElementPag.campoQuantidade(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2282193019,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "clica no botao Add to card",
+            "match": {
+              "location": "ElementPag.clickBotaoAddToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3707063974,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "clica no botao Proceed To Checkout",
+            "match": {
+              "location": "ElementPag.clickBotaoProceedToCheckout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4146816349,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "clica no botao Proceed To Checkout",
+            "match": {
+              "location": "ElementPag.clickBotaoProceedToCheckout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7323938011,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "fecha broser do teste",
+            "match": {
+              "location": "ElementPag.fechaBroswer()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag3"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "  I want to use this template for my feature file",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "features/cenario.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Title of your scenario",
+        "description": "",
+        "id": "cenarios-para-testa-a-seguranca-do-site;title-of-your-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "I want to write a step with precondition",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "some other precondition",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I complete action",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "some other action",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "yet another action",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I validate the outcomes",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "check more outcomes",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testScurity"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Title of your scenario outline",
+        "description": "",
+        "id": "cenarios-para-testa-a-seguranca-do-site;title-of-your-scenario-outline;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "I want to write a step with name1",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "I check for the 5 in step",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "I verify the success in step",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testScurity"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Title of your scenario outline",
+        "description": "",
+        "id": "cenarios-para-testa-a-seguranca-do-site;title-of-your-scenario-outline;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "I want to write a step with name2",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "I check for the 7 in step",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "I verify the Fail in step",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testScurity"
+          },
+          {
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "Cenarios para testa a seguranca do site",
+    "description": "",
+    "id": "cenarios-para-testa-a-seguranca-do-site",
+    "keyword": "Feature",
+    "uri": "features/cenarioTestSecurity.feature",
+    "tags": [
+      {
+        "name": "@testScurity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -11,19 +11,16 @@ import util.Validacao;
 
 public class TC_001_PaginaPrincipal {
 
-
 	WebDriver driver = Browser.getDriver();
 
 	String nomeTeste = getClass().getSimpleName();
 	ManipularCsv manipularCsv = new ManipularCsv();
-	
 	
 	@Test
 	public void exect() {
 		cenarioTestePesquisar();
 		cenarioTestePesquisarComTexto();
 	}
-
 	
 	public void cenarioTestePesquisar() {
 		TelaPrincipalController telaPrincipalController = new TelaPrincipalController(driver);//, doc);

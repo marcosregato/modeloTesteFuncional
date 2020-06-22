@@ -4,37 +4,6 @@ import java.util.Random;
 
 public class GeradorDeCnh{
 
-	/**
-
-	Para validar o CNH, o algoritmo que gera o numero CNH usa o Modulo 11
-
-	Fonte de pesquisa:
-
-	Algoritmos – Validação de CNH
-	https://siga0984.wordpress.com/2019/05/01/algoritmos-validacao-de-cnh/
-
-	Solucoes Eletronicas
-	https://www.bb.com.br/docs/pub/emp/empl/dwn/Rcb001.pdf
-
-
-	Calculo do Dígito Verificador para inscricoes estaduais com 8 dígitos:
-	http://www.sintegra.gov.br/Cad_Estados/cad_BA.html
-
-
-	documento que regulamenta o documento de cnh
-	http://www.denatran.gov.br/download/Resolucoes/resolucao_192_06.doc
-
-
-	Calculo do Digito Verificador para CPF e CGC
-	http://www.goulart.pro.br/cbasico/Calculo_dv.htm
-
-	 LG - ENG - Dígito verificador 
-	https://centraldeatendimento.totvs.com/hc/pt-br/articles/360026092631-LG-ENG-D%C3%ADgito-verificador
-
-livro Guia De Valida��o De Dados Em Java 
-
-	 */
-
 	public String getNumeroCnh(){
 		try{
 			Random r = new Random();
@@ -68,7 +37,6 @@ livro Guia De Valida��o De Dados Em Java
 		return null;
 	}
 
-
 	@SuppressWarnings("unused")
 	public void validaCNH(String numeroCNH) {
 		char char1 = numeroCNH.charAt(0);
@@ -89,19 +57,6 @@ livro Guia De Valida��o De Dados Em Java
 				System.out.println("DEU MERDA");
 				//status = false;
 			}
-			//int subtrair = 11-restoDivisao;
-
-			//System.out.println(subtrair);
 		}
-
-
-	}
-	
-	
-
-
-	public static void main(String[] asdf){
-		GeradorDeCnh g = new GeradorDeCnh();
-		g.validaCNH(g.getNumeroCnh());
 	}
 }
