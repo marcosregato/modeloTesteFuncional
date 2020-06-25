@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import browser.Browser;
+import config.ConfigProperties;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,6 +18,7 @@ public class ElementPag extends Browser {
 
 	WebDriver driver = getDriver();
 	EstiloRoupa estiloRoupa = new EstiloRoupa();
+    int tempo = Integer.valueOf(ConfigProperties.getProperty("tempo.espera"));
 	
 	@And("^clicar no botao de pesquisa$")
 	public void clickBotaoPesquisar() {
@@ -24,7 +26,7 @@ public class ElementPag extends Browser {
 			WebElement element = driver.findElement(By.xpath(".//*[@name='submit_search']"));
 			element.click();
 		} catch (Exception e) {
-			e.printStackTrace();
+			e.getMessage();
 		}
 	}
 
@@ -33,7 +35,7 @@ public class ElementPag extends Browser {
 		try {
 			driver.get(url);
 		} catch (Exception e) {
-			e.printStackTrace();
+			e.getMessage();
 		}
 	}
 
@@ -44,7 +46,7 @@ public class ElementPag extends Browser {
 			WebElement element = driver.findElement(By.linkText(estiloRoupa.estiloPopular()));
 			element.click();
 		} catch (NoSuchElementException e) {
-			e.printStackTrace();
+			e.getMessage();
 		}
 	}
 
@@ -54,7 +56,7 @@ public class ElementPag extends Browser {
 			WebElement element = driver.findElement(By.xpath(".//*[@placeholder='Search']"));
 			element.sendKeys(estiloRoupa.estiloPopular());
 		} catch (NoSuchElementException e) {
-			e.printStackTrace();
+			e.getMessage();
 		}
 	}
 
@@ -64,7 +66,7 @@ public class ElementPag extends Browser {
 			Select select = new Select(driver.findElement(By.id("selectProductSort")));
 			select.selectByValue(new EstiloRoupa().ordemProduto());
 		} catch (NoSuchElementException e) {
-			e.printStackTrace();
+			e.getMessage();
 		}
 	}
 
@@ -75,37 +77,47 @@ public class ElementPag extends Browser {
 				driver.quit();
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			e.getMessage();
 		}
 	}
 
 	@And("^o usuario digita a quantidade de roupa (.*?)$")
 	public void campoQuantidade(String quantidade) {
 		try {
+			for (int x = 0; x <= tempo; x++) {
+                Thread.sleep(1000);
+            }
 			WebElement element = driver.findElement(By.id("quantity_wanted"));
 			element.clear();
 			element.sendKeys(quantidade);
 		} catch (NoSuchElementException e) {
-			e.printStackTrace();
+			e.getMessage();
+		}catch (InterruptedException e) {
+			e.getMessage();
 		}
 	}
 
 	@And("^clica no botao Add to card$")
 	public void clickBotaoAddToCart() {
 		try {
+			for (int x = 0; x <= tempo; x++) {
+                Thread.sleep(1000);
+            }
 			WebElement element = driver.findElement(By.name("Submit"));
 			element.click();
-			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
 			e.printStackTrace();
 		}catch (InterruptedException e) {
-			e.printStackTrace();
+			e.getMessage();
 		}
 	}
 
 	@And("^clica no botao Proceed To Checkout$")
 	public void clickBotaoProceedToCheckout() {
 		try {
+			for (int x = 0; x <= tempo; x++) {
+                Thread.sleep(1000);
+            }
 			WebElement element = driver.findElement(By.xpath(".//*[@title='Proceed to checkout']"));
 			if(element.isDisplayed()) {
 				element.click();
@@ -113,11 +125,10 @@ public class ElementPag extends Browser {
 				WebElement element2 = driver.findElement(By.xpath("//a[contains(@href,'controller=order&step=1')]"));
 				element2.click();
 			}
-			Thread.sleep(2000);
 		} catch (NoSuchElementException e) {
-			e.printStackTrace();
+			e.getMessage();
 		}catch (InterruptedException e) {
-			e.printStackTrace();
+			e.getMessage();
 		}
 	}
 

@@ -35,12 +35,11 @@ public class Validacao {
             assertEquals(txt,element.getText().replace("\"", ""));
             util.menuHighlightElement(element, driver);
             
-            manipularCsv.escreverCsv(nomeMetodo, "OK", "Texto encontrado => "+txt);
+            manipularCsv.escreverCsv("1",nomeMetodo, "OK", "Texto encontrado => "+txt);
             
         } catch (Exception e) {
-        	manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
-        	System.out.println(">>>>>>>>>>>>>>>>>> "+nomeMetodo+" <<<<<<<<<<<<<<<<<<<<<< \n"); 
-			e.printStackTrace();
+        	manipularCsv.escreverCsv("1",nomeMetodo, "ERRO", e.getMessage());
+        	e.getMessage();
             Browser.closeBrowser(driver);
         }
     }

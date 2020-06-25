@@ -3,15 +3,12 @@ package relatorio;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
-
-import config.ConfigProperties;
 
 public class ManipularCsv {
 
@@ -20,18 +17,16 @@ public class ManipularCsv {
 
 	static String path = System.getProperty("user.dir");
 
-	private String pathArquivoWind = "C:\\Users\\"+nomeUsuario+"\\Documents\\FERRAMENTA_TESTE\\logsCSV\\";
-	//private String pathArquivoLinux = "../modeloTesteFuncional/FERRAMENTA_TESTE/logsCSV/";
 	private static final String Path_TestData = System.getProperty("user.dir");
-	String pathArquivoLinux = Path_TestData+"/FERRAMENTA_TESTE/";
-	
+	String pathArquivo = Path_TestData+"/FERRAMENTA_TESTE/";
+
 
 	Process proc;
 	public void criarDiretorio() {
 		try {
-			if(!new File(pathArquivoLinux).exists()) {
-				new File(pathArquivoLinux).mkdir();
-				
+			if(!new File(pathArquivo).exists()) {
+				new File(pathArquivo).mkdir();
+
 			}else {
 				System.out.println("JA FOI CRIAADO");
 			}
@@ -45,49 +40,14 @@ public class ManipularCsv {
 			Date dataHoraAtual = new Date();
 			String data = new SimpleDateFormat("dd_MM_yyyy").format(dataHoraAtual);
 			String horario = new SimpleDateFormat("HH_mm").format(dataHoraAtual);
-			if(sistemaOperacional.contains("Windows")) {
-				BufferedWriter pw = new BufferedWriter(new FileWriter(pathArquivoWind+ nomeClass + "_" + "" + data + "_"+horario+".csv"));
-				String array = "Status,Data,Hora,Nome Metodo, Mensagem Erro";
-				pw.append(array);
-				pw.append("\n");
-				pw.close();
-			}else {
-				BufferedWriter pw = new BufferedWriter(new FileWriter(pathArquivoLinux+ nomeClass + "_" + "" + data + "_"+horario+".csv"));
-				String array = "Status,Data,Hora,Nome Metodo, Mensagem Erro";
-				pw.append(array);
-				pw.append("\n");	
-				pw.close();
-			}
+			BufferedWriter pw = new BufferedWriter(new FileWriter(pathArquivo+ nomeClass + "_" + "" + data + "_"+horario+".csv"));
+			String array = "ID,Status,Data,Hora,Nome Metodo, Mensagem Erro";
+			pw.append(array);
+			pw.append("\n");
+			pw.close();
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
-		}
-	}
-
-	public void escreverCsv(String nomeMetodo, String status) {
-		try {
-			Date dataHoraAtual = new Date();
-			String data = new SimpleDateFormat("dd-MM-yyyy").format(dataHoraAtual);
-			String hora = new SimpleDateFormat("HH:mm").format(dataHoraAtual);
-
-			File arquivoWindows = new File(pathArquivoWind+getUltimoArquivoCsv());
-			File arquivoLinux = new File(pathArquivoLinux+getUltimoArquivoCsv());
-			String linha = status + "," + data + "," + hora + "," + nomeMetodo;
-			
-			PrintWriter csvWriter;
-			if (sistemaOperacional.contains("Windows")) {
-				csvWriter = new  PrintWriter(new FileWriter(arquivoWindows,true));
-				csvWriter.println(linha);
-				csvWriter.close();
-			} else {
-				csvWriter = new  PrintWriter(new FileWriter(arquivoLinux,true));
-				csvWriter.println(linha);
-				csvWriter.close();
-			}
-			
-		} catch (Exception e) {
-			System.out.println(">>>>>>>>>>>>>>>> escreverCsv <<<<<<<<<<<<<<<<<< \n");
-			e.printStackTrace();
 		}
 	}
 
@@ -97,75 +57,52 @@ public class ManipularCsv {
 	 * @param status
 	 * @param mensagemErro
 	 */
-	public void escreverCsv(String nomeMetodo, String status, String mensagemErro) {
+	public void escreverCsv(String id ,String nomeMetodo, String status, String mensagemErro) {
 		try {
 			Date dataHoraAtual = new Date();
 			String data = new SimpleDateFormat("dd-MM-yyyy").format(dataHoraAtual);
 			String hora = new SimpleDateFormat("HH:mm").format(dataHoraAtual);
 
-			File arquivoWindows = new File(pathArquivoWind+getUltimoArquivoCsv());
-			File arquivoLinux = new File(pathArquivoLinux+getUltimoArquivoCsv());
+			File arquivo = new File(pathArquivo+getUltimoArquivoCsv());
 
-			String linha = status + "," + data + "," + hora + "," + nomeMetodo+","+mensagemErro;
+			String linha = id + "," + status + "," + data + "," + hora + "," + nomeMetodo+","+mensagemErro;
 			PrintWriter csvWriter;
-			if (sistemaOperacional.contains("Windows")) {
-				csvWriter = new  PrintWriter(new FileWriter(arquivoWindows,true));
-				csvWriter.println(linha);
-				csvWriter.close();
-			} else {
-				csvWriter = new  PrintWriter(new FileWriter(arquivoLinux,true));
-				csvWriter.println(linha);
-				csvWriter.close();
-			}
-			
+			csvWriter = new  PrintWriter(new FileWriter(arquivo,true));
+			csvWriter.println(linha);
+			csvWriter.close();
+
 		} catch (Exception e) {
 			System.out.println(">>>>>>>>>>>>>>>> escreverCsv <<<<<<<<<<<<<<<<<< \n");
-			e.printStackTrace();
+			e.getMessage();
 		}
 	}
 
 	@SuppressWarnings("unused")
-	public String getUltimoArquivoCsv(){//String nomeArquivo) {
+	public String getUltimoArquivoCsv(){
 		try {
-			File arquivoLinux = new File(pathArquivoLinux);
-			File arquivoWindows = new File(pathArquivoWind);
-
+			File arquivo = new File(pathArquivo);
+		
 			String ultimoArquivo = null;
 			List<String> list = new ArrayList<String>();
 
-			if(arquivoWindows.exists()) {
-				File listFile[] = arquivoWindows.listFiles();
-				for (int x = 0; x < listFile.length; x++) {
-					if (listFile[x].getName().endsWith(".csv")) {
-						list.add(listFile[x].getName());
-					}
+			File listFile[] = arquivo.listFiles();
+			for (int x = 0; x < listFile.length; x++) {
+				if (listFile[x].getName().endsWith(".csv")) {
+					list.add(listFile[x].getName());
 				}
-				Collections.sort(list);
-
-				for (int x = 0; x <= list.size(); x++) {
-					ultimoArquivo = list.get(list.size() - 1);
-					break;
-				}
-				return ultimoArquivo;	
-			}else {
-				File listFile[] = arquivoLinux.listFiles();
-				for (int x = 0; x < listFile.length; x++) {
-					if (listFile[x].getName().endsWith(".csv")) {
-						list.add(listFile[x].getName());
-					}
-				}
-				Collections.sort(list);
-
-				for (int x = 0; x <= list.size(); x++) {
-					ultimoArquivo = list.get(list.size() - 1);
-					break;
-				}
-				return ultimoArquivo;
 			}
+			Collections.sort(list);
+
+			for (int x = 0; x <= list.size(); x++) {
+				ultimoArquivo = list.get(list.size() - 1);
+				break;
+			}
+			return ultimoArquivo;
+
 
 		} catch (Exception e) {
 			System.out.println(">>>>>>>>>>>>>>>>>>> getUltimoArquivoCsv <<<<<<<<<<<<<<<<<<<<<< \n");
-			e.printStackTrace();
+			e.getMessage();
 		}
 		return null;
 	}
