@@ -38,9 +38,9 @@ public class TelaPrincipalController {
             WebElement element = driver.findElement(txtPesquisar);
             util.menuHighlightElement(element, driver);
             element.sendKeys(txt);
-            manipularCsv.escreverCsv("1",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-            manipularCsv.escreverCsv("1",nomeMetodo, "ERRO", e.getMessage());
+            manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
 
@@ -53,9 +53,9 @@ public class TelaPrincipalController {
             WebElement element = driver.findElement(btnPesquisar);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("2",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-            manipularCsv.escreverCsv("2",nomeMetodo, "ERRO", e.getMessage());
+            manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
 
@@ -68,9 +68,9 @@ public class TelaPrincipalController {
             WebElement element = driver.findElement(btnWomen);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("3",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("3",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -83,9 +83,9 @@ public class TelaPrincipalController {
             WebElement element = driver.findElement(btnDresses);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("4",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("4",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
 
@@ -98,9 +98,9 @@ public class TelaPrincipalController {
             WebElement element = driver.findElement(btnT_shirts);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("5",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-            manipularCsv.escreverCsv("5",nomeMetodo, "ERRO", e.getMessage());
+            manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -113,9 +113,9 @@ public class TelaPrincipalController {
             WebElement element = driver.findElement(btnBestSellers);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("6",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("6",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -128,9 +128,9 @@ public class TelaPrincipalController {
             WebElement element = driver.findElement(btnPopular);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("7",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("7",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -143,9 +143,9 @@ public class TelaPrincipalController {
             WebElement element = driver.findElement(voltarPagIndex);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("8",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("8",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
 }

@@ -4,13 +4,6 @@
 > Versão 04 / atualizado 25/Jun/2020
 
 ![Semantic description of image](./diagrama.png)</p>
-<h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- Arquitetura do projeto </h3>
 
 > ** Ferramentas de desenvolvimento ** </br>
 > * Java - versão 8
@@ -73,3 +66,9 @@
 
 > __Api Teste MongoDB__
 > [GitHub Pages](https://github.com/marcosregato/apiTesteMongoDB).</br>
+
+> __convert CSV to JSON__
+> [GitHub Pages](https://github.com/marcosregato/convertCSVtoJSON).</br>
+
+> __Data Science QA__
+> [GitHub Pages](https://github.com/marcosregato/dataScienceQA).</br>

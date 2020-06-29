@@ -1,0 +1,52 @@
+{
+	"clinete": [
+		{
+			"Status": "Status",
+			"Hora": "Data",
+			"data": "Nome Metodo",
+			"Nome Metodo": "Hora"
+		},
+		{
+			"Status": "OK",
+			"Hora": "25-06-2020",
+			"data": "setTxtPesquisar",
+			"Nome Metodo": "16:24"
+		},
+		{
+			"Status": "OK",
+			"Hora": "25-06-2020",
+			"data": "clickBtnPesquisar",
+			"Nome Metodo": "16:25"
+		},
+		{
+			"Status": "OK",
+			"Hora": "25-06-2020",
+			"data": "isValidarElement",
+			"Nome Metodo": "16:25"
+		},
+		{
+			"Status": "OK",
+			"Hora": "25-06-2020",
+			"data": "voltarPagIndex",
+			"Nome Metodo": "16:25"
+		},
+		{
+			"Status": "OK",
+			"Hora": "25-06-2020",
+			"data": "clickBtnPesquisar",
+			"Nome Metodo": "16:25"
+		},
+		{
+			"Status": "OK",
+			"Hora": "25-06-2020",
+			"data": "isValidarElement",
+			"Nome Metodo": "16:25"
+		},
+		{
+			"Status": "OK",
+			"Hora": "25-06-2020",
+			"data": "cenarioTestePesquisarComTexto",
+			"Nome Metodo": "16:25"
+		}
+	]
+}

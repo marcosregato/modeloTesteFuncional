@@ -37,7 +37,7 @@ public class TC_001_PaginaPrincipal {
 			validacao.isValidarElement("BLOUSE", ".//span[@class='lighter']");
 
 		} catch (Exception e) {
-			manipularCsv.escreverCsv("1",nomeMetodo, "ERRO", e.getMessage());
+			manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
 			Browser.closeBrowser(driver);
 		}
 	}
@@ -53,11 +53,11 @@ public class TC_001_PaginaPrincipal {
 			Validacao validacao = new Validacao(driver);
 			validacao.isValidarElement("Please enter a search keyword", ".//p[@class='alert alert-warning']");
 
-			manipularCsv.escreverCsv("2",nomeMetodo, "OK", "Final do Teste");
+			manipularCsv.escreverCsv(nomeMetodo, "OK", "Final do Teste");
 			
 			Browser.closeBrowser(driver);
 		} catch (Exception e) {
-			manipularCsv.escreverCsv("2",nomeMetodo, "ERRO", e.getMessage());
+			manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
 			Browser.closeBrowser(driver);
 		}
 	}

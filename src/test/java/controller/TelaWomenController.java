@@ -69,9 +69,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxMenuTops);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("1",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("1",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -85,9 +85,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxMenuDresses);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("2",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("2",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -101,9 +101,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxCategoriaTops);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("3",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("3",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -117,9 +117,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxCategoriaDresses);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("4",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("4",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -133,9 +133,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxSizeS);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("5",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("5",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -149,9 +149,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxSizeL);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("6",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("6",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -165,9 +165,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxSizeM);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("7",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("7",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -181,9 +181,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxColorBeige);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("8",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("8",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -197,9 +197,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxColorBlack);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("9",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("9",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -213,9 +213,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxColorBlue);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("10",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("10",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -229,9 +229,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxColorYellow);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("11",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("11",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -245,9 +245,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxColorWhite);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("12",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("12",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -261,9 +261,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxColorOrange);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("13",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("13",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -277,9 +277,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxColorGreen);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("14",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("14",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -293,9 +293,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxColorPink);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("15",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("15",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -309,9 +309,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxCompositionsCotton);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("16",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("16",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -325,9 +325,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxCompositionsViscose);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("17",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("17",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -341,9 +341,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxCompositionsPolyester);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("18",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("18",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -357,9 +357,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxStylesCasual);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("19",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("19",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -373,9 +373,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxStylesGirly);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("20",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("20",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -389,9 +389,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxPropertiesColorfulDress);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("21",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("21",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -405,9 +405,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxPropertiesMidiDress);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("22",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("22",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -421,9 +421,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxPropertiesShortSleeve);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("23",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("23",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -437,9 +437,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxPropertiesMaxiDress);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("24",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("24",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -453,9 +453,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxPropertiesSortDress);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("25",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("25",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -469,9 +469,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxAvailabilityInStock);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("26",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("26",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -485,9 +485,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxManufacturerFashoinManufacture);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("27",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("27",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -501,9 +501,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxCategoriaDressea);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("28",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("28",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
     
@@ -517,9 +517,9 @@ public class TelaWomenController {
             WebElement element = driver.findElement(checkBoxStylesDressy);
             util.menuHighlightElement(element, driver);
             element.click();
-            manipularCsv.escreverCsv("29",nomeMetodo, "OK",null);
+            manipularCsv.escreverCsv(nomeMetodo, "OK",null);
         } catch (Exception e) {
-             manipularCsv.escreverCsv("29",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
 }

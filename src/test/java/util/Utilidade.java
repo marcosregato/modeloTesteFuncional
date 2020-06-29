@@ -20,6 +20,13 @@ public class Utilidade {
 
     int tempo = Integer.valueOf(ConfigProperties.getProperty("tempo.espera"));
 
+    public String pathDiretorioArquivo(String nome) {
+    	String nomeDiretorio = System.getProperty("user.dir");
+    	String path = nomeDiretorio+"/"+nome+"/";
+    	return path;
+    	
+    }
+    
     public void menuHighlightElement(WebElement element, WebDriver driver) {
         try {
             if (driver instanceof JavascriptExecutor) {

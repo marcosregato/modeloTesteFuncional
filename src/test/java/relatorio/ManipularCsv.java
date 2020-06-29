@@ -10,18 +10,14 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
+import util.Utilidade;
+
 public class ManipularCsv {
-
-	String sistemaOperacional = System.getProperty("os.name");
-	String nomeUsuario = System.getProperty("user.name");
-
-	static String path = System.getProperty("user.dir");
-
+	
 	private static final String Path_TestData = System.getProperty("user.dir");
 	String pathArquivo = Path_TestData+"/FERRAMENTA_TESTE/";
+	Utilidade util = new Utilidade();
 
-
-	Process proc;
 	public void criarDiretorio() {
 		try {
 			if(!new File(pathArquivo).exists()) {
@@ -41,7 +37,7 @@ public class ManipularCsv {
 			String data = new SimpleDateFormat("dd_MM_yyyy").format(dataHoraAtual);
 			String horario = new SimpleDateFormat("HH_mm").format(dataHoraAtual);
 			BufferedWriter pw = new BufferedWriter(new FileWriter(pathArquivo+ nomeClass + "_" + "" + data + "_"+horario+".csv"));
-			String array = "ID,Status,Data,Hora,Nome Metodo, Mensagem Erro";
+			String array = "Status,Data,Hora,Nome Metodo, Mensagem Erro";
 			pw.append(array);
 			pw.append("\n");
 			pw.close();
@@ -57,7 +53,7 @@ public class ManipularCsv {
 	 * @param status
 	 * @param mensagemErro
 	 */
-	public void escreverCsv(String id ,String nomeMetodo, String status, String mensagemErro) {
+	public void escreverCsv(String nomeMetodo, String status, String mensagemErro) {
 		try {
 			Date dataHoraAtual = new Date();
 			String data = new SimpleDateFormat("dd-MM-yyyy").format(dataHoraAtual);
@@ -65,7 +61,7 @@ public class ManipularCsv {
 
 			File arquivo = new File(pathArquivo+getUltimoArquivoCsv());
 
-			String linha = id + "," + status + "," + data + "," + hora + "," + nomeMetodo+","+mensagemErro;
+			String linha = status + "," + data + "," + hora + "," + nomeMetodo+","+mensagemErro;
 			PrintWriter csvWriter;
 			csvWriter = new  PrintWriter(new FileWriter(arquivo,true));
 			csvWriter.println(linha);

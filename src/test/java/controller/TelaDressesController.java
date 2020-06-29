@@ -30,7 +30,7 @@ public class TelaDressesController {
             util.menuHighlightElement(element,driver);
             element.click();
         } catch (Exception e) {
-             manipularCsv.escreverCsv("1",nomeMetodo, "ERRO", e.getMessage());
+             manipularCsv.escreverCsv(nomeMetodo, "ERRO", e.getMessage());
         }
     }
 }
