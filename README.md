@@ -14,6 +14,8 @@
 
 # Mode de execucão.
 
+>	Para executar o teste use a classe ExecutaTeste da pasta config.</br>
+
 > 	Os testes podem ser executados ou no Cucumber ou no Junit. </br>
 > 	Na pasta config, temos 2 classes que são :
 
@@ -26,6 +28,11 @@
 
 > 	Os testes serão executados pelo Junit, colocando no nome da classe.
 > 	No caso desse projeto o nome e TC_001_PaginaPrincipal.class, que fica no pacote cenarioTeste.
+
+> __Alterar o modo de execucao__ <br/>
+
+> 	No raiz do projeto, tem uma arquivo chamado config.properties. Nele o usuario pode altera o modo
+> 	para RunnerTestJunit ou RunnerTestCucumber
 
 # Evidência de teste.
 
@@ -72,3 +79,7 @@
 
 > __Data Science QA__
 > [GitHub Pages](https://github.com/marcosregato/dataScienceQA).</br>
+
+> __Teste Api QA__
+> [GitHub Pages](https://github.com/marcosregato/testeApiQA).</br>
+

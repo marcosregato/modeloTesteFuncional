@@ -37,7 +37,7 @@ public class ManipularCsv {
 			String data = new SimpleDateFormat("dd_MM_yyyy").format(dataHoraAtual);
 			String horario = new SimpleDateFormat("HH_mm").format(dataHoraAtual);
 			BufferedWriter pw = new BufferedWriter(new FileWriter(pathArquivo+ nomeClass + "_" + "" + data + "_"+horario+".csv"));
-			String array = "Status,Data,Hora,Nome Metodo, Mensagem Erro";
+			String array = "status,data,hora,nome_metodo,mensagem_erro";
 			pw.append(array);
 			pw.append("\n");
 			pw.close();
