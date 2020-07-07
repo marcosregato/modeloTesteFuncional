@@ -36,15 +36,16 @@
 
 # Evidência de teste.
 
-> 	Sera criado na raiz do projeto a pasta FERRAMENTA_TESTE, onde sera criar uma arquivo CSV no termino da execução do teste,
-> 	No diretório é gerado arquivo no formato CSV com o resultados dos steps do teste.</br>
+> 	Sera criado na raiz do projeto a pasta FERRAMENTA_TESTE, onde sera criar uma arquivo CSV 
+> 	no termino da execução do teste.
+> 	No diretório é gerado arquivo no formato CSV com o resultados dos steps do teste.
 > 	Exemplo :
 
 > 	Status,Data,Hora,Nome Metodo, Mensagem Erro
 > 	OK,23-02-2020,01:32,setTxtPesquisar  
 
 > 	Nesse exemplo a coluna Mensagem ERRO está vazia, porquê, não deu erro na execução do teste.
-> 	Caso tenha dado errado, será preenchido com uma mensagem. </br>
+> 	Caso tenha dado errado, será preenchido com uma mensagem.
 > 	Exemplo : 
 
 > 	Status,Data,Hora,Nome Metodo, Mensagem Erro
@@ -82,4 +83,7 @@
 
 > __Teste Api QA__
 > [GitHub Pages](https://github.com/marcosregato/testeApiQA).</br>
+
+> __Gerador massa de dados QA__
+> [GitHub Pages](https://github.com/marcosregato/geradorMassaQA).</br>
 

@@ -1,8 +1,0 @@
-status,data,hora,nome_metodo,mensagem_erro
-OK,29-06-2020,01:03,setTxtPesquisar,null
-OK,29-06-2020,01:03,clickBtnPesquisar,null
-OK,29-06-2020,01:03,isValidarElement,Texto encontrado => BLOUSE
-OK,29-06-2020,01:04,voltarPagIndex,null
-OK,29-06-2020,01:04,clickBtnPesquisar,null
-OK,29-06-2020,01:04,isValidarElement,Texto encontrado => Please enter a search keyword
-OK,29-06-2020,01:04,cenarioTestePesquisarComTexto,Final do Teste
