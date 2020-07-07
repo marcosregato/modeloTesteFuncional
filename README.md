@@ -12,6 +12,7 @@
 > * Sonarqube
 > * OpenCSV </br>
 
+
 # Mode de execucão.
 
 >	Para executar o teste use a classe ExecutaTeste da pasta config.</br>
