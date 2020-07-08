@@ -1,7 +1,12 @@
 # ModeloTesteFuncional
 
 > ModeloTeste, faz parte de arquitetura de sistema para testa sistemas web.</br> 
-> Versão 04 / atualizado 25/Jun/2020
+> Versão 04
+
+> __Mais informacoes sobre a Arquitetura QA__
+
+>		Email = marcosregato01@gmail.com
+>		Assunto = Arquitetura QA
 
 ![Semantic description of image](./diagrama.png)</p>
 
