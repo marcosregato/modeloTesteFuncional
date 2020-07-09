@@ -1,12 +1,16 @@
 # ModeloTesteFuncional
 
-> ModeloTeste, faz parte de arquitetura de sistema para testa sistemas web.</br> 
+> ModeloTeste, faz parte de um projeto de arquitetura de QA. 
 > Versão 04
 
-> __Mais informacoes sobre a Arquitetura QA__
+> __Mais Informações sobre a Arquitetura QA__
 
->		Email = marcosregato01@gmail.com
->		Assunto = Arquitetura QA
+>	Email = marcosregato01@gmail.com
+>	Assunto = Arquitetura QA
+
+> __Descrição do projeto__
+
+>	Uma estrtura simple de teste funcional para sistema Web
 
 ![Semantic description of image](./diagrama.png)</p>
 
@@ -22,13 +26,13 @@
 
 >	Para executar o teste use a classe ExecutaTeste da pasta config.</br>
 
-> 	Os testes podem ser executados ou no Cucumber ou no Junit. </br>
+>	Os testes podem ser executados ou no Cucumber ou no Junit. </br>
 > 	Na pasta config, temos 2 classes que são :
 
 > __RunnerTestCucumber__ </br>
 
 > 	Os teste serão executados na forma tradicional da execucão do Cucumber.
-> 	Colocando o caminho da pasta steps do seu projeto.
+>	Colocando o caminho da pasta steps do seu projeto.
 	
 > ** RunnerTestJunit ** </br>
 
@@ -72,14 +76,15 @@
 
 
 # Links dos projetos da arquitetura.
+
 > __Modelo Teste Funcional__
 > [GitHub Pages](https://github.com/marcosregato/modeloTesteFuncional).</br>
 
 > __Painel Teste Angular__
 > [GitHub Pages](https://github.com/marcosregato/painelTesteAngular).</br>
 
-> __Api Teste MongoDB__
-> [GitHub Pages](https://github.com/marcosregato/apiTesteMongoDB).</br>
+> __Teste API QA__
+> [GitHub Pages](https://github.com/marcosregato/testeApiQA).</br>
 
 > __convert CSV to JSON__
 > [GitHub Pages](https://github.com/marcosregato/convertCSVtoJSON).</br>
@@ -87,8 +92,8 @@
 > __Data Science QA__
 > [GitHub Pages](https://github.com/marcosregato/dataScienceQA).</br>
 
-> __Teste Api QA__
-> [GitHub Pages](https://github.com/marcosregato/testeApiQA).</br>
+> __Api QA__
+> [GitHub Pages](https://github.com/marcosregato/apiQA).</br>
 
 > __Gerador massa de dados QA__
 > [GitHub Pages](https://github.com/marcosregato/geradorMassaQA).</br>
