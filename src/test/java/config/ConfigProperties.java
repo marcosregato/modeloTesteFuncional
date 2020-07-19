@@ -42,9 +42,5 @@ public class ConfigProperties {
 		}
 		return nomeArquivo;
 	}
-
-	public static void main(String[] asd) {
-		ConfigProperties c = new ConfigProperties();
-		System.out.println(c);
-	}
+	
 }

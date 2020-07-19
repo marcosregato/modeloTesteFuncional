@@ -1,6 +1,6 @@
-# ModeloTesteFuncional
+# Modelo Teste Funcional
 
-> ModeloTeste, faz parte de um projeto de arquitetura de QA. 
+> Modelo Teste Funcional, faz parte do projeto da arquitetura de QA. 
 > Versão 04
 
 > __Mais Informações sobre a Arquitetura QA__
@@ -78,23 +78,23 @@
 # Links dos projetos da arquitetura.
 
 > __Modelo Teste Funcional__
-> [GitHub Pages](https://github.com/marcosregato/modeloTesteFuncional).</br>
+> [Link do projeto](https://github.com/marcosregato/modeloTesteFuncional).</br>
 
 > __Painel Teste Angular__
-> [GitHub Pages](https://github.com/marcosregato/painelTesteAngular).</br>
+> [Link do projeto](https://github.com/marcosregato/painelTesteAngular).</br>
 
 > __Teste API QA__
-> [GitHub Pages](https://github.com/marcosregato/testeApiQA).</br>
+> [Link do projeto](https://github.com/marcosregato/testeApiQA).</br>
 
 > __convert CSV to JSON__
-> [GitHub Pages](https://github.com/marcosregato/convertCSVtoJSON).</br>
+> [Link do projeto](https://github.com/marcosregato/convertCSVtoJSON).</br>
 
 > __Data Science QA__
-> [GitHub Pages](https://github.com/marcosregato/dataScienceQA).</br>
+> [Link do projeto](https://github.com/marcosregato/dataScienceQA).</br>
 
 > __Api QA__
-> [GitHub Pages](https://github.com/marcosregato/apiQA).</br>
+> [Link do projeto](https://github.com/marcosregato/apiQA).</br>
 
 > __Gerador massa de dados QA__
-> [GitHub Pages](https://github.com/marcosregato/geradorMassaQA).</br>
+> [Link do projeto](https://github.com/marcosregato/geradorMassaQA).</br>
 
